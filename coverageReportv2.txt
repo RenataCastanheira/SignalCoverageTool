@@ -1,0 +1,14 @@
+ AP(0, 0)-> Target( 0, 100 )-> Attenuation = 40.00 dB
+ AP(0, 0)-> Target( 100, 0 )-> Attenuation = 40.00 dB
+ AP(0, 0)-> Target( 100, 100 )-> Attenuation = 43.01 dB
+ AP(0, 0)-> Target( 200, 0 )-> Attenuation = 56.99 dB
+ AP(0, 0)-> Target( 200, 100 )-> Attenuation = 56.99 dB
+ AP(0, 0)-> Target( 300, 0 )-> Attenuation = 71.68 dB
+ AP(0, 0)-> Target( 300, 100 )-> Attenuation = 71.68 dB
+ AP(200, 0)-> Target( 0, 0 )-> Attenuation = 56.99 dB
+ AP(200, 0)-> Target( 0, 100 )-> Attenuation = 56.99 dB
+ AP(200, 0)-> Target( 100, 0 )-> Attenuation = 54.18 dB
+ AP(200, 0)-> Target( 100, 100 )-> Attenuation = 54.18 dB
+ AP(200, 0)-> Target( 200, 100 )-> Attenuation = 40.00 dB
+ AP(200, 0)-> Target( 300, 0 )-> Attenuation = 54.18 dB
+ AP(200, 0)-> Target( 300, 100 )-> Attenuation = 54.18 dB

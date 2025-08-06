@@ -1,0 +1,36 @@
+{
+  "L": 100,
+  "dRef": 100,
+  "cumulatedWallLoss": 10,
+  "n": 2,
+  "atenInDistRef": 40,
+
+  "buildingArea": { "width": 300, "height": 100 },
+  "subregions": [
+    {
+      "x": 0,
+      "y": 0,
+      "subRegionArea": { "width": 100, "height": 100 },
+      "adjacencyRegionsIndexes": [1],
+      "value": 1.0
+    },
+    {
+      "x": 100,
+      "y": 0,
+      "subRegionArea": { "width": 100, "height": 100 },
+      "adjacencyRegionsIndexes": [0, 2],
+      "value": 1.0
+    },
+    {
+      "x": 200,
+      "y": 0,
+      "subRegionArea": { "width": 100, "height": 100 },
+      "adjacencyRegionsIndexes": [1],
+      "value": 1.0
+    }
+  ],
+  "apList": [
+    { "x": 0, "y": 0 },
+    { "x": 200, "y": 0 }
+  ]
+}

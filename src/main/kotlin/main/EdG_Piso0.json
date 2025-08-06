@@ -1,0 +1,308 @@
+{
+  "L": 10000,
+  "dRef": 10000,
+  "cumulatedWallLoss": 10,
+  "n": 2,
+  "atenInDistRef": 40,
+
+  "buildingArea": { "width": 605675, "height": 579175 },
+  "subregions": [
+    {
+      "x": 1625,
+      "y": 0,
+      "subRegionArea": { "width": 119325, "height": 90625 },
+      "adjacencyRegionsIndexes": [1,35,36,37,38],
+      "value": 1.0
+    },
+    {
+      "x": 120950,
+      "y": 0,
+      "subRegionArea": { "width": 91475, "height": 90625 },
+      "adjacencyRegionsIndexes": [0,2,37],
+      "value": 1.0
+    },
+    {
+      "x": 212425,
+      "y": 0,
+      "subRegionArea": { "width": 91475, "height": 90625 },
+      "adjacencyRegionsIndexes": [1,3,37],
+      "value": 1.0
+    },
+    {
+      "x": 303900,
+      "y": 0,
+      "subRegionArea": { "width": 91475, "height": 90625 },
+      "adjacencyRegionsIndexes": [2,4,37],
+      "value": 1.0
+    },
+    {
+      "x": 395375,
+      "y": 0,
+      "subRegionArea": { "width": 91475, "height": 90625 },
+      "adjacencyRegionsIndexes": [3,5,6,37],
+      "value": 1.0
+    },
+    {
+      "x": 486850,
+      "y": 0,
+      "subRegionArea": { "width": 28475, "height": 71850 },
+      "adjacencyRegionsIndexes": [4,6,7],
+      "value": 1.0
+    },
+    {
+      "x": 486850,
+      "y": 71850,
+      "subRegionArea": { "width": 28475, "height": 18775 },
+      "adjacencyRegionsIndexes": [4,5,7,37],
+      "value": 1.0
+    },
+    {
+      "x": 515325,
+      "y": 0,
+      "subRegionArea": { "width": 90350, "height": 90625 },
+      "adjacencyRegionsIndexes": [5,6,8,9],
+      "value": 1.0
+    },
+    {
+      "x": 515325,
+      "y": 90625,
+      "subRegionArea": { "width": 6375, "height": 50350 },
+      "adjacencyRegionsIndexes": [7,9,37],
+      "value": 1.0
+    },
+    {
+      "x": 521700,
+      "y": 90625,
+      "subRegionArea": { "width": 83975, "height": 50350 },
+      "adjacencyRegionsIndexes": [7,8,10],
+      "value": 1.0
+    },
+    {
+      "x": 515325,
+      "y": 140975,
+      "subRegionArea": { "width": 90350, "height": 26625 },
+      "adjacencyRegionsIndexes": [8,9,11,37],
+      "value": 1.0
+    },
+    {
+      "x": 515325,
+      "y": 167600,
+      "subRegionArea": { "width": 90350, "height": 27125 },
+      "adjacencyRegionsIndexes": [10,12,37],
+      "value": 1.0
+    },
+    {
+      "x": 515325,
+      "y": 194725,
+      "subRegionArea": { "width": 90350, "height": 94000 },
+      "adjacencyRegionsIndexes": [11,13,37],
+      "value": 1.0
+    },
+    {
+      "x": 515325,
+      "y": 288725,
+      "subRegionArea": { "width": 90350, "height": 29525 },
+      "adjacencyRegionsIndexes": [12,14,37],
+      "value": 1.0
+    },
+    {
+      "x": 515325,
+      "y": 318250,
+      "subRegionArea": { "width": 90350, "height": 60425 },
+      "adjacencyRegionsIndexes": [13,15,37],
+      "value": 1.0
+    },
+    {
+      "x": 515325,
+      "y": 378675,
+      "subRegionArea": { "width": 90350, "height": 31850 },
+      "adjacencyRegionsIndexes": [14,16,17,37],
+      "value": 1.0
+    },
+    {
+      "x": 515325,
+      "y": 410525,
+      "subRegionArea": { "width": 65700, "height": 51975 },
+      "adjacencyRegionsIndexes": [15,17,18,37],
+      "value": 1.0
+    },
+    {
+      "x": 581025,
+      "y": 410525,
+      "subRegionArea": { "width": 24650, "height": 51975 },
+      "adjacencyRegionsIndexes": [15,16,18],
+      "value": 1.0
+    },
+    {
+      "x": 515325,
+      "y": 462500,
+      "subRegionArea": { "width": 90350, "height": 25525 },
+      "adjacencyRegionsIndexes": [16,17,19,20,37],
+      "value": 1.0
+    },
+    {
+      "x": 543950,
+      "y": 488025,
+      "subRegionArea": { "width": 61725, "height": 91150 },
+      "adjacencyRegionsIndexes": [18,20],
+      "value": 1.0
+    },
+    {
+      "x": 515325,
+      "y": 488025,
+      "subRegionArea": { "width": 28625, "height": 91150 },
+      "adjacencyRegionsIndexes": [18,19,21,22],
+      "value": 1.0
+    },
+    {
+      "x": 495800,
+      "y": 488025,
+      "subRegionArea": { "width": 19525, "height": 13100 },
+      "adjacencyRegionsIndexes": [20,22,23,37],
+      "value": 1.0
+    },
+    {
+      "x": 495800,
+      "y": 501125,
+      "subRegionArea": { "width": 19525, "height": 78050 },
+      "adjacencyRegionsIndexes": [20,21,23],
+      "value": 1.0
+    },
+    {
+      "x": 343300,
+      "y": 488025,
+      "subRegionArea": { "width": 152500, "height": 91150 },
+      "adjacencyRegionsIndexes": [21,22,24,37],
+      "value": 1.0
+    },
+    {
+      "x": 253200,
+      "y": 488025,
+      "subRegionArea": { "width": 90100, "height": 91150 },
+      "adjacencyRegionsIndexes": [23,25,37],
+      "value": 1.0
+    },
+    {
+      "x": 191750,
+      "y": 488025,
+      "subRegionArea": { "width": 61450, "height": 91150 },
+      "adjacencyRegionsIndexes": [24,26,37],
+      "value": 1.0
+    },
+    {
+      "x": 162025,
+      "y": 488025,
+      "subRegionArea": { "width": 29725, "height": 91150 },
+      "adjacencyRegionsIndexes": [25,27,37],
+      "value": 1.0
+    },
+    {
+      "x": 132000,
+      "y": 488025,
+      "subRegionArea": { "width": 30025, "height": 91150 },
+      "adjacencyRegionsIndexes": [26,28,37],
+      "value": 1.0
+    },
+    {
+      "x": 8350,
+      "y": 488025,
+      "subRegionArea": { "width": 123650, "height": 91150 },
+      "adjacencyRegionsIndexes": [27,29,30,37,40],
+      "value": 1.0
+    },
+    {
+      "x": 0,
+      "y": 436775,
+      "subRegionArea": { "width": 34100, "height": 51250 },
+      "adjacencyRegionsIndexes": [28,30,31,39,40],
+      "value": 1.0
+    },
+    {
+      "x": 34100,
+      "y": 436775,
+      "subRegionArea": { "width": 60550, "height": 51250 },
+      "adjacencyRegionsIndexes": [28,29,31,37],
+      "value": 1.0
+    },
+    {
+      "x": 3300,
+      "y": 346250,
+      "subRegionArea": { "width": 91350, "height": 90525 },
+      "adjacencyRegionsIndexes": [29,30,37,32,39],
+      "value": 1.0
+    },
+    {
+      "x": 3300,
+      "y": 255725,
+      "subRegionArea": { "width": 91350, "height": 90525 },
+      "adjacencyRegionsIndexes": [31,33,37,39],
+      "value": 1.0
+    },
+    {
+      "x": 3300,
+      "y": 165200,
+      "subRegionArea": { "width": 91350, "height": 90525 },
+      "adjacencyRegionsIndexes": [32,34,37,39],
+      "value": 1.0
+    },
+    {
+      "x": 0,
+      "y": 134575,
+      "subRegionArea": { "width": 94650, "height": 30625 },
+      "adjacencyRegionsIndexes": [33,35,36,37,39],
+      "value": 1.0
+    },
+    {
+      "x": 0,
+      "y": 90625,
+      "subRegionArea": { "width": 33625, "height": 43950 },
+      "adjacencyRegionsIndexes": [0,34,36],
+      "value": 1.0
+    },
+    {
+      "x": 33625,
+      "y": 90625,
+      "subRegionArea": { "width": 61025, "height": 43950 },
+      "adjacencyRegionsIndexes": [0,34,35,37],
+      "value": 1.0
+    },
+    {
+      "x": 94650,
+      "y": 90625,
+      "subRegionArea": { "width": 420675, "height": 397400 },
+      "adjacencyRegionsIndexes": [0,1,2,3,4,6,8,10,11,12,13,14,15,16,18,21,23,24,25,26,27,28,30,31,32,33,34,36],
+      "value": 1.0
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "subRegionArea": { "width": 1625, "height": 90625 },
+      "adjacencyRegionsIndexes": [0,35],
+      "value": 1.0
+    },
+    {
+      "x": 0,
+      "y": 165200,
+      "subRegionArea": { "width": 3300, "height": 271575 },
+      "adjacencyRegionsIndexes": [29,31,32,33,34],
+      "value": 1.0
+    },
+    {
+      "x": 0,
+      "y": 488025,
+      "subRegionArea": { "width": 8350, "height": 91150 },
+      "adjacencyRegionsIndexes": [28,29],
+      "value": 1.0
+    }
+  ],
+  "apList": [
+    { "x": 232250, "y": 105500 },
+    { "x": 349750, "y": 105500 },
+    { "x": 500000, "y": 215250 },
+    { "x": 350500, "y": 474000 },
+    { "x": 122000, "y": 462000 },
+    { "x": 110500, "y": 333250 },
+    { "x": 110500, "y": 181750 },
+    { "x": 190250, "y": 64250 }
+  ]
+}

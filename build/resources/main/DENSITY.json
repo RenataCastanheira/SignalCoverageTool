@@ -1,0 +1,20 @@
+[
+  {
+    "x": 10.0,
+    "y": 10.0,
+    "subRegionArea": {
+      "width": 20.0,
+      "height": 20.0
+    },
+    "value": 0.8
+  },
+  {
+    "x": 40.0,
+    "y": 40.0,
+    "subRegionArea": {
+      "width": 20.0,
+      "height": 20.0
+    },
+    "value": 0.5
+  }
+]
