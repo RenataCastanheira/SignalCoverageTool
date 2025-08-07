@@ -1,4 +1,4 @@
-# Kotlin Project - WiFiCoverage
+# Kotlin Project - WiFiCoverage: A Fast and Accurate Tool for Automatic Indoor Coverage Analysis
 
 This project was developed using the **Kotlin** programming language, with the goal of processing input data from files in **JSON** format, using the **GSON** library.
 To view the algorithms used in the application, you can access the source code available in this repository.
