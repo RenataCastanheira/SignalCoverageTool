@@ -20,3 +20,7 @@ tasks.test {
 kotlin {
     jvmToolchain(21)
 }
+
+tasks.jar.configure { manifest { attributes(mapOf("Main-Class" to "org.example.main.MainCoverageReportKt")) }
+    configurations["compileClasspath"].forEach { file: File -> from(zipTree(file.absoluteFile)) }
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE }

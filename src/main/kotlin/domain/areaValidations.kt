@@ -76,61 +76,41 @@ fun areTheAreasOverlapping(buildingArea: AREA, subRegionsAreas:List<DENSITY>) :B
 
 
 //função auxiliar para verificar se há sobreposição entre 2 regiões
-fun isOverlapping(subRegion: DENSITY, subRegionValidated: DENSITY): Boolean {
+fun isOverlapping(A: DENSITY, B: DENSITY): Boolean {
 
-    val maxXvalidating = subRegion.x + subRegion.subRegionArea.width
+    val aPoints = mutableListOf<COORDINATES>()
 
-    val minXvalidating = subRegion.x
+    aPoints.add(COORDINATES(A.x, A.y + A.subRegionArea.height))//aTopRight
+    aPoints.add(COORDINATES(A.x + A.subRegionArea.width, A.y + A.subRegionArea.height))//aTopLeft
+    aPoints.add(COORDINATES(A.x , A.y))//aBottomRight
+    aPoints.add(COORDINATES(A.x + A.subRegionArea.width, A.y))//aBottomLeft
+    aPoints.add(COORDINATES(A.x + A.subRegionArea.width/2 ,A.y + A.subRegionArea.height/2))//aCenter
 
-    val maxYvalidating = subRegion.y + subRegion.subRegionArea.height
+    val bPoints = mutableListOf<COORDINATES>()
+    bPoints.add(COORDINATES(B.x, B.y + B.subRegionArea.height))//aTopRight
+    bPoints.add(COORDINATES(B.x + B.subRegionArea.width, B.y + B.subRegionArea.height))//aTopLeft
+    bPoints.add(COORDINATES(B.x , B.y))//aBottomRight
+    bPoints.add(COORDINATES(B.x + B.subRegionArea.width, B.y))//aBottomLeft
+    bPoints.add(COORDINATES(B.x + B.subRegionArea.width/2 ,B.y + B.subRegionArea.height/2))//aCenter
 
-    val minYvalidating = subRegion.y
+    for(aPoint in aPoints){
+        if (isCoordinateInsideRegion(aPoint, B)) return true
+    }
 
-
-    val maxXvalidated = subRegionValidated.x + subRegionValidated.subRegionArea.width
-
-    val minXvalidated = subRegionValidated.x
-
-    val maxYvalidated = subRegionValidated.y + subRegionValidated.subRegionArea.height
-
-    val minYvalidated = subRegionValidated.y
-
-    if (
-        (minYvalidating == minYvalidated && maxYvalidating == maxYvalidated
-                && minXvalidating>minXvalidated && maxXvalidating<maxXvalidated ) //subregiao dentro de outra
-
-        ||
-
-        (minXvalidating == minXvalidated && maxXvalidating == maxXvalidated
-                && minYvalidating>minYvalidated && maxYvalidating<maxYvalidated)//TB subregiao dentro da outra
-
-        ||
-
-        (minXvalidating == minXvalidated && minYvalidating == minYvalidated) //exemplo subregião totalmente sobreposta à outra
-
-        ||
-
-        (  minYvalidated < maxYvalidating  && maxYvalidating < maxYvalidated
-        &&  minXvalidated< maxXvalidating && maxXvalidating < maxXvalidated )
-
-        ||
-
-        (  minYvalidated< minYvalidating && minYvalidating <maxYvalidated
-        &&  minXvalidated < minXvalidating && minXvalidating < maxXvalidated )
-
-        ||
-
-        (  minYvalidated<minYvalidating && minYvalidating>maxYvalidated
-        &&  minXvalidated<minXvalidating && minXvalidating<maxXvalidated)
-
-        ||
-
-        ( minYvalidated< maxYvalidating  &&  maxYvalidating<maxYvalidated
-        &&  minXvalidated<minXvalidating && minXvalidating<maxXvalidated)
-
-        )  return true
+    for(bPoint in bPoints){
+        if (isCoordinateInsideRegion(bPoint, A)) return true
+    }
 
     return false
+
+}
+
+
+fun isCoordinateInsideRegion(point: COORDINATES, subregion: DENSITY): Boolean {
+
+    return if (subregion.x < point.x  &&  point.x <(subregion.x + subregion.subRegionArea.width)
+        &&   subregion.y< point.y  && point.y < (subregion.y + subregion.subRegionArea.height) ) true
+    else false
 
 }
 
@@ -317,12 +297,12 @@ fun validateData(buildingArea: AREA, subRegionsAreas: List<DENSITY>): Boolean {
     }
 
     // TODO: verificar a função de overlapping
-    /*
+
     if (areTheAreasOverlapping(buildingArea, subRegionsAreas)) {
         println("The subregions overlap!")
         return false
     }
-     */
+
 
 
     if (!doTheSubRegionsCoverAllArea(buildingArea, subRegionsAreas)) {

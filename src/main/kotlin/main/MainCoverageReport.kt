@@ -11,6 +11,7 @@ import org.example.domain.buildCoverageReportv2
 import java.io.File
 import kotlin.time.measureTime
 import domain.validateData
+import kotlin.system.exitProcess
 
 data class InputData(
     val L: Int,
@@ -26,8 +27,13 @@ data class InputData(
 
 fun main(args: Array<String>) {
     val gson = Gson()
-    val jsonInput = if (args.size == 1) File(args[0]).readText()
-    else File("src/main/kotlin/main/input.json").readText()
+    if (args.size != 1){
+        println("No input file specified.")
+        exitProcess(1)
+    }
+
+    val jsonInput = File(args[0]).readText()
+
     val inputData = gson.fromJson(jsonInput, InputData::class.java)
 
     // Aplica as configurações vindas do ficheiro

@@ -1,0 +1,10 @@
+
+To run the program without IntelliJ settings, you should use the following command:
+
+# java org.example.main.MainCoverageReportKt\
+
+ Additionally, you can specify the main parameter, which corresponds to the name of the JSON file:
+
+# java org.example.main.MainCoverageReportKt myInput.json
+
+ java -jar projeto-1.0-SNAPSHOT.jar /Users/renatacastanheira/Documents/faculdade/projeto1/src/main/kotlin/main/EdG_Piso0.json
